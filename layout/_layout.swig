@@ -6,6 +6,9 @@
   {{- next_inject('head') }}
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.swig', {}, {cache: theme.cache.enable}) }}
+  <!--google adsense start-->
+  {% include '_custom/google_adsense.ejs' %}
+  <!--google adsense ends-->
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
 </head>
 
